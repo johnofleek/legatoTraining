@@ -1,0 +1,18 @@
+{
+    "leafMinVersion": "2.0.1",
+    "profiles": {
+        "currentWp76": {
+            "packages": {
+                "swi-wp76": "4.0.2"
+            }
+        },
+        "currentWP85": {
+            "packages": {
+                "swi-wp85": "3.0.0"
+            }
+        }
+    },
+    "env": {
+        "LEGATO_DEF_FILE": "${LEAF_WORKSPACE}/mySys.sdef"
+    }
+}

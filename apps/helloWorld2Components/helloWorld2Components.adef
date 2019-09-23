@@ -1,0 +1,44 @@
+/*
+	Application definition .adef files are used to specify the external interfaces and 
+	internal content of applications that can be built, installed, and run on target devices.
+
+	.adef files can also be used to override some settings of components without having
+	to change those components themselves, thereby making the components more reusable.
+
+	Each application has a .adef file that describes:
+
+	- which executables should be built from which components
+	- additional files from the build system to be included in the app
+	- processes to be started when the app starts
+		(by running what executables with what command-line arguments
+		and environment variables) 
+	- if the app should automatically start when the target device boots
+		files (or other file system objects) from the target root file system to be 
+		available to the app at runtime
+	- limits on the app at runtime (e.g., cpu limits, memory limits, etc.)
+	- overrides for memory pool sizes and configuration settings for components in the app (future)
+	- IPC bindings between components within the app
+	- IPC interfaces made visible to other apps
+*/
+
+version: 
+	1.0.0
+
+start:
+	manual
+
+executables:
+{
+	helloworldExe = ( helloWorldComponent Component2 )
+}
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+	run:
+	{
+		( helloworldExe )
+	}
+}

@@ -1,0 +1,29 @@
+
+version: 1.0.0
+//maxFileSystemBytes: 512K
+sandboxed: false
+executables:
+{
+	wan = ( wanComponent )
+}
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+	run:
+	{
+		( wan )
+	}
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+
+bindings:
+{
+    wan.wanComponent.le_data -> dataConnectionService.le_data
+    wan.wanComponent.le_mdc -> modemService.le_mdc
+    wan.wanComponent.le_mrc -> modemService.le_mrc
+    wan.wanComponent.le_sim -> modemService.le_sim
+}

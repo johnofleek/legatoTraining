@@ -1,0 +1,39 @@
+// First ubuntu shell terminal 1
+
+// configure the legato command line environment so that we can use the legato host tools
+//     note we only need the toolchain for the target in use in this case wp85 so no need to worry about other device errors
+
+// Paste the following into the shell terminal 1
+source ~/legato/packages/legato.sdk.latest/resources/configlegatoenv 
+
+// build app (shell terminal 1)
+mkapp -t wp85 helloWorld_timer.adef
+
+
+
+
+// start a basic debug session
+
+// open a target shell terminal 2 (press Ctrl-Alt-t)
+// simple command line debug from Ubuntu host
+// - don't forget that once ssh'd this shell terminals interaction is with the target Linux not the Ubuntu host
+ssh root@192.168.2.2
+
+// report target log entries (shell terminal 2)
+logread -f
+
+
+// Work with the app using the host tools shell terminal 1
+// observe log results in the target shell terminal 2
+
+// install app 
+instapp helloWorld_timer.wp85.update 192.168.2.2
+
+// stop the app 
+stopapp helloWorld_timer 192.168.2.2
+
+// start the app 
+startapp helloWorld_timer 192.168.2.2
+
+// remove the app
+rmapp helloWorld_timer 192.168.2.2

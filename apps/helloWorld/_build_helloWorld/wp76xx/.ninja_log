@@ -1,0 +1,10 @@
+# ninja log v5
+0	101	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/app/helloWorld/obj/helloWorld/_main.c.o	30d8eda40ef8fb55
+0	102	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/component/088912239965cffa0e4c0d5bb1a0a9a2/obj/_componentMain.c.o	df30aaea5b259fab
+0	103	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/component/088912239965cffa0e4c0d5bb1a0a9a2/obj/e244f7d01368aa49018548d5614e617f.o	fc32962df275b499
+103	129	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/staging/read-only/lib/libComponent_helloComponent.so	35daa41d1ac4ab62
+129	133	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/app/helloWorld/staging/read-only/lib/libComponent_helloComponent.so	f29211c6ca68d160
+129	163	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/app/helloWorld/obj/helloWorld/helloWorld	1c3a2bd4e654a4be
+163	167	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/app/helloWorld/staging/read-only/bin/helloWorld	d07e55bfd7a584fd
+167	177	0	/home/john/WP76/apps/helloWorld/_build_helloWorld/wp76xx/app/helloWorld/staging/info.properties	c854740120c337d2
+177	208	0	helloWorld.wp76xx.update	b6ea69b76356c5dc

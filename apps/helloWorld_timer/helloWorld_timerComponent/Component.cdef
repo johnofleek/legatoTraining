@@ -1,0 +1,13 @@
+
+sources:
+{
+	helloWorld_timer.c
+}
+
+requires:
+{
+    api:
+    {
+		modemServices/le_info.api
+    }
+}

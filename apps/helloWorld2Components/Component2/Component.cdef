@@ -1,0 +1,20 @@
+/*
+	Component definition .cdef files are used to specify the external interfaces 
+	and internal content of reusable software components.
+
+	Each component has a single Component.cdef file that defines:
+
+	- source code files used to build the component
+	- files from the build system to be included in any app that includes the component
+	- files on the target to be accessible to any app that includes the component
+	- IPC interfaces the component implements
+	- other components needed by this component
+	- memory pool sizes
+	- configuration settings for the component (future)
+*/
+
+
+sources:
+{
+	helloWorld2.c
+}

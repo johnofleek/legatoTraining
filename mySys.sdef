@@ -1,0 +1,9 @@
+#include $LEGATO_ROOT/default.sdef
+
+apps:
+{
+    ./apps/helloWorld/helloWorld  
+    ./apps/helloWorld2Components/helloWorld2Components
+    ./apps/helloWorld_timer/helloWorld_timer
+    ./apps/wan/wan
+}

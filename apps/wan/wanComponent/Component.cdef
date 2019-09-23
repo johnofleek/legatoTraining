@@ -1,0 +1,19 @@
+
+requires:
+{
+    api:
+    {
+        le_data.api
+		le_cfg.api
+        modemServices/le_mdc.api
+        modemServices/le_mrc.api
+        modemServices/le_sim.api
+     
+    }
+}
+
+
+sources:
+{
+	wan.c
+}
