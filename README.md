@@ -29,9 +29,13 @@ root@swi-mdm9x28-wp:~# app stop wan
 
 # git
 
+*Clone* 
+
+git clone https://github.com/johnofleek/legatoTraining.git
+
+*Checkin*
 ```
 git add .
 git commit -m "first commit"
-git remote add origin https://github.com/johnofleek/legatoTraining.git
 git push -u origin master
 ```

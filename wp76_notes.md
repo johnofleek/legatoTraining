@@ -48,9 +48,13 @@ mkapp -s components -t wp76xx -i ./leaf-data/current/wp76-legato/interfaces/mode
 
 # Visual Studio Code
 
-```
-https://docs.legato.io/latest/tools_vsCode.html
-```
+
+[Sierra install info](https://docs.legato.io/latest/tools_vsCode.html)
+
+[Microsoft install info](https://code.visualstudio.com/Download)
+
+[Microsoft Getting Started](https://code.visualstudio.com/docs/?dv=linux64_deb)
+
 
 ## Build
 
