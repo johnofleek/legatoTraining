@@ -41,6 +41,11 @@ Build the legato system
 mksys -t wp76xx mySys.sdef
 ```
 
+Build an individual app - disadvantage is that the interfaces are not fully checked
+```
+mkapp -s components -t wp76xx -i ./leaf-data/current/wp76-legato/interfaces/modemServices ./apps/wan/wan.adef
+```
+
 # Visual Studio Code
 
 ```

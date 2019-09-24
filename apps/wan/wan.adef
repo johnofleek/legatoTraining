@@ -1,11 +1,17 @@
 
 version: 1.0.0
 //maxFileSystemBytes: 512K
-sandboxed: false
+sandboxed:
+	false
+
+start:
+	manual
+
 executables:
 {
 	wan = ( wanComponent )
 }
+
 processes:
 {
 	envVars:

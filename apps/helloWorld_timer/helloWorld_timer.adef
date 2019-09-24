@@ -1,6 +1,13 @@
 
-version: 1.0.0
-maxFileSystemBytes: 512K
+version: 
+	1.0.1
+
+start:
+	manual
+
+maxFileSystemBytes: 
+	512K
+
 executables:
 {
 	helloworld = ( helloWorld_timerComponent )
