@@ -1,0 +1,8 @@
+mkapp
+-s
+components
+-t
+wp76xx
+-i
+./leaf-data/current/wp76-legato/interfaces/modemServices
+./apps/wan/wan.adef
